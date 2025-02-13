@@ -41,7 +41,7 @@ if (cluster.isPrimary) {
 
   const __dirname = dirname(fileURLToPath(import.meta.url));
 
-  app.get('/', (req, res) => {
+  app.get('/chat', (req, res) => {
     res.sendFile(join(__dirname, 'index.html'));
   });
 
